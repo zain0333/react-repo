@@ -2,8 +2,8 @@ import Alert from "./components/Alert";
 
 function App() {
   return (
-    <div>
-      <Alert />
+    <div className="container mt-3">
+      <Alert text="Hello World" />
     </div>
   );
 }
