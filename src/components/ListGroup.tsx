@@ -12,7 +12,7 @@ function ListGroup() {
           <li
             className="list-group-item"
             key={item}
-            onClick={() => console.log(Clicked)}
+            onClick={() => console.log("item")}
           >
             {item}
           </li>
