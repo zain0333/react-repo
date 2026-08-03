@@ -4,6 +4,7 @@ import { Fragment } from "react";
 
 function ListGroup() {
   let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+  let selectedIndex = 0;
 
   //Event handler
   const handleClick = (event: MouseEvent) => console.log(event);
@@ -15,7 +16,11 @@ function ListGroup() {
       <ul className="list-group">
         {items.map((item, index) => (
           <li
-            className="list-group-item active"
+            className={
+              selectedIndex === index
+                ? "list-group-item active"
+                : "list-group-item"
+            }
             key={item}
             onClick={handleClick}
           >
